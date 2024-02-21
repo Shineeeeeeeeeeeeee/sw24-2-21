@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(37, 37, 37, 0.89);
+}
+header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+header .logo{
+    width: 220px;
+    height: 100%;
+
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header .menu{
+    width: 220px;
+    height: 100%;
+    display: flex;
+
+}
+header .menu .item{
+    width: 25%;
+    height: 100%;
+    border-left: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    position: relative;
+
+    
+}
+header .menu .item .text{
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: aqua;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+header .menu .item .text input{
+    outline: none;
+    width: 70%;
+    height: 40%;
+    border: none;
+    padding-left: 10px;
+}
+header .menu .item #check1:checked ~ .text{
+    display: flex;
+}
+#check1{
+    display: none;
+}
+
+/* header .menu .item:hover .text{
+    display: flex;
+} */
+header .menu .item .dotor{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    z-index: 1;
+    display: none;
+    
+}
+header .menu .item .dotor .door{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+header .menu .item #check2:checked ~ .dotor{
+    display: flex;
+}
+#check2{
+    display: none;
+}
+header .menu .item .dotor2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    top: 50px;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+header .menu .item #check3:checked ~ .dotor2 {
+    display: block;
+}
+#check3{
+    display: none;
+}
+
+
+header .menu .item:hover{
+    transition: 1s;
+}
+header .menu .item:hover{
+    color: aqua;
+}
+
+header .logo .menu{
+    width: 220px;
+    height: 100%;
+    background-color: blueviolet;
+    
+}
+
+
+.container{
+    width: 80%;
+    height: fit-content;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container .photo{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.container .photo img{
+    width: 100%;
+    height: 100%;
+}
+.container .photo .uusgalt{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.493));
+    color: white;
+    padding-top: 125px;
+    padding-left: 20px;
+}
+.container .photo .uusgalt p{
+    transition: 1s;
+}
+.container .photo .uusgalt:hover p{
+        color: aqua;
+    }
+
+
+.container3{
+    width: 80%;
+    height: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    transition: 2s;
+
+}
+.container3 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.container3:hover  {
+    background-color: aqua;
+    color: white;
+}
+.zar1{
+    width: 60%;
+    height: 200px;
+    background-color: aqua;
+    margin:  20px auto;
+
+}
+
+
+.container4{
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    color: rgb(190, 190, 190);
+}
+.container4 .scroll{
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.container0{
+    width:200%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.container0 .zurag{
+    width: 170px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container0 .zurag img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container4 .container0 .zurag .uusgalt3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(rgba(19, 16, 16, 0.438),rgba(12, 11, 11, 0.349));
+    padding-top: 280px;
+    padding-left: 20px;
+    color: rgb(10, 111, 158);
+    /* display: none;  */
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;  
+}
+.container4 .container0 .zurag:hover .uusgalt3{
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+}
+
+.zar{
+    width: 60%;
+    height: 200px;
+    background-color: aqua;
+    margin: 50px auto;
+}
+
+
+
+.container5{
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: right;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+    
+}
+.container5 .icon{
+    width: 220px;
+    height: 100%;
+    display: flex;
+    /* border-top: 1px solid grey; */
+}
+.container5 .icon .item1{
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid gray;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container5 .icon .item1:hover i{
+    color: aqua;
+}
+/* .container5 .icon .item1 i{
+    color: gray;
+} */
+.container5 .icon .item1 i{
+    transition: 1s;
+}
+
+.mnffan{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
